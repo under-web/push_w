@@ -39,6 +39,7 @@ def main():  # главная функция
                 show_note(get_weather(get_html(url)))
             time.sleep(3600)
         except Exception as e:
+            print('error main func', e)
             time.sleep(10)
 
 
