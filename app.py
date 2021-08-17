@@ -33,8 +33,7 @@ def show_note(result_note):  # выводит сообщение
 def main():  # главная функция
     while True:
         try:
-            urls = ['https://www.gismeteo.ru/weather-apastovo-204190/',
-                   'https://www.gismeteo.ru/weather-bugulma-4583/']
+            urls = ['https://www.gismeteo.ru/weather-bugulma-4583/']
             for url in urls:
                 show_note(get_weather(get_html(url)))
             time.sleep(3600)
